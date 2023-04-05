@@ -19,6 +19,7 @@ if __name__ == "__main__":
     parser.add_argument("--path",
                         help="Pattern of files to watch",
                         default=settings.watch_directory,
+                        type=is_dir_path,
                         )
     parser.add_argument("-d", "--watch-delay",
                         help="Watch delay, default is 5s", 
